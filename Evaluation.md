@@ -9,7 +9,7 @@
 
 #### Errors:
 
-- macOS -> 5x : Element with locator 'xpath=//a[@class='c-product__link'][normalize-space()='Orava EG-1900']' not found.
+  - chyba nastava v momente, ked ides na link klikat. Kedze mam windows virtualizovany, je podstatne pomalsi a stranka sa stihned donacitat (network je slabsi tiez). Naopak  na macOS stranka nabehne hned a produkty su tam este neni v bode, kedy ides nan kliknut - vyriesit by to slo tym, ze by si vzdy cakal na element, na ktory ides klikat
 
   
 - Z pohladu testingu:
@@ -31,7 +31,8 @@
 
 - ***Overall***:
 
-  - chybaju m
+  - chybaju mi subory vyssie popisane
+  - niektore klikacky mas skor, ako sa elementy objavia (to sa da vyriesit 'pomalsim' networkom)
 
 
 ### Keywords subor
@@ -47,6 +48,24 @@
 - nezatvara mi chrome, chybajuce `[Setup]` a `[Teardown]`
 - v main test file su xpathy, ktore netusim ako 'tester' kam mieria a co to je za divny zapis
 
+#### Keywords sekcia
+
+  - General: 
+    - mas strasne moc copy/paste kodu
+    - ak uz, mohol si na to co sa ti opakuje vytvorit dalsi KW, ktory by si iba prevolal v `Add ...` keywordoch
+
+  - 3 keywordy na pridanie 3 produktov mi biju do oci, treba ich parametrizovat a mas univerzalny keyword
+  - Keyword: `Delete One Product`
+    - ako pisem, je moc genericky a netusim co 'One' v tomto pripade znamena, treba to bud indexovat alebo pouzit nazov produktu
+  
+  - Keyword: `Navigate to grill section`
+    - zase, parametrizujme, ak sa pozies, tie sekcie su vsetky //h2 , je easy to sparametrizovat a mat univerzalne riesenie
+
+  
+
+#### Variables sekcia
+  
+  - nepouzivas vobec, coz je skoda, pretoze mas kopu codu 'copy/paste'
 
 ### Readme.md subor
 
